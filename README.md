@@ -1,4 +1,4 @@
-##HALAMAN ENTRY
+## HALAMAN ENTRY
 <img src="https://github.com/user-attachments/assets/3cfeb355-7399-4471-a14b-fc610a6c2de1" width="300" />
 
 ##HALAMAN HOME
