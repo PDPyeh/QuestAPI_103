@@ -16,5 +16,7 @@ interface ServiceApiSiswa {
     //suspend fun getSatuSiswa(@Query("id") id: Int): DataSiswa
     //
     //@PUT("editTM.php/{id}")
+    //suspend fun editSatuSiswa(@Query("id") id:Int,@Body dataSiswa):retrofit2.Response<Void>
+    //
     //
 }
