@@ -65,7 +65,7 @@ fun DetailSiswaScreen(
                 onClick = {
                     when (uiState) {
                         is StatusUiDetail.Success ->
-                            navigateToEditItem(uiState.statusSiswa.id)
+                            navigateToEditItem(uiState.satusiswa.id)
                         else -> {}
                     }
                 },
@@ -111,7 +111,7 @@ private fun BodyDetailDataSiswa(
         when (statusUiDetail) {
             is StatusUiDetail.Success -> {
                 DetailDataSiswa(
-                    siswa = statusUiDetail.statusSiswa,
+                    siswa = statusUiDetail.satusiswa,
                     modifier = Modifier.fillMaxWidth()
                 )
             }
