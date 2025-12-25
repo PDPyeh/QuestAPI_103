@@ -6,6 +6,8 @@ import androidx.lifecycle.viewmodel.CreationExtras
 import androidx.lifecycle.viewmodel.initializer
 import androidx.lifecycle.viewmodel.viewModelFactory
 import com.example.databaseintegration.repositori.AplikasiDataSiswa
+import com.example.databaseintegration.viewmodel.DetailViewModel
+import com.example.databaseintegration.viewmodel.EditViewModel
 import com.example.databaseintegration.viewmodel.EntryViewModel
 import com.example.databaseintegration.viewmodel.HomeViewModel
 
@@ -26,6 +28,18 @@ object PenyediaViewModel {
             EntryViewModel(
                 aplikasiDataSiswa().container
                     .repositoryDataSiswa
+            )
+        }
+        initializer {
+            DetailViewModel(
+                this.createSavedStateHandle(),
+                aplikasiDataSiswa().container.repositoryDataSiswa
+            )
+        }
+        initializer {
+            EditViewModel(
+                this.createSavedStateHandle(),
+                aplikasiDataSiswa().container.repositoryDataSiswa
             )
         }
     }
